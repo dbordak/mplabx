@@ -8,7 +8,7 @@ RUN dpkg --add-architecture i386 \
     && apt-get install -yq --no-install-recommends curl libc6:i386 \
     libx11-6:i386 libxext6:i386 libstdc++6:i386 libexpat1:i386 \
     libxext6 libxrender1 libxtst6 libgtk2.0-0 \
-    ca-certificates git-core procps
+    ca-certificates git-core procps openssh-client
 # Download and install XC32 compiler
 
 RUN curl -fSL -A "Mozilla/4.0" -o /tmp/xc32.run "http://ww1.microchip.com/downloads/en/DeviceDoc/xc32-v1.40-full-install-linux-installer.run" \
